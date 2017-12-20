@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rock Paper Scissors On Ethereum</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h2>RPS Dapp</h2>
+  <h3>Last Winner <span class="black"><span id="winner"></span></span></h3>
+
+  <br>
+  <h1>Register</h1>
+  <br><label for="amount">Amount:</label><input type="text" id="amount" placeholder="at least 5 wei"></input>
+  <br><br><button id="send" onclick="App.register()">Register Game</button>
+  <br><br>
+  <label for="amount">Selection:</label>
+  <select id="selection">
+		<option value="paper">Paper</option>
+		<option value="rock">Rock</option>
+		<option value="scissors">Scissors</option>
+	</select></p>
+  <br><br><button id="play" onclick="App.play()">Play Game</button>
+  <span id="status"></span>
+  <br>
+  <span class="hint"><strong>Hint:</strong> open the browser developer console to view any errors and warnings.</span>
+</body>
+</html>
